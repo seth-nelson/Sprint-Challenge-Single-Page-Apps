@@ -29,8 +29,21 @@ export default function CharacterList() {
   }, [searchQuery]);
 
   return (
-    <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
-    </section>
+    <div>
+      <SearchForm placeHolder='Search Characters' searchQuery={searchQuery} handleInputChanges={handleInputChanges} />
+      <section className="character-list">
+        {characterInfo.map(character => {
+          return (
+            <CharacterCard
+              key={character.id}
+              image={character.image}
+              name={character.name}
+              species={character.species}
+              status={character.status}
+            />
+          );
+        })}
+      </section>
+    </div>
   );
 }
