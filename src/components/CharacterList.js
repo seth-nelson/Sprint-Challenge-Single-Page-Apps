@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
+import SearchFOrm from './SearchForm';
+import CharacterCard from './CharacterCard';
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
+  const [ characterInfo, setCharacterInfo ] = useState([]);
+  const [ searchQuery, setSearchQuery ] = useState('');
 
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
