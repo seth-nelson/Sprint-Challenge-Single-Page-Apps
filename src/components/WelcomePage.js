@@ -9,7 +9,7 @@ const StyledMainImg = styled.img`
   margin: 20px;
   border-radius: 20px;
   border: 5px dotted dodgerblue;
-  width: 80%;
+  width: 60%;
 `;
 
 export default function WelcomePage() {
