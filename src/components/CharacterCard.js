@@ -2,10 +2,10 @@ import React from "react";
 import styled from 'styled-components';
 
 const StyledDiv = styled.div` 
-  background-color: 008f11;
-  border-radius: 10px;
-  border: 2px solid 3c89d0;
+  margin: 20px;
   text-align: center;
+  color: #00ff00;
+  text-shadow: 1px 1px black;
 `;
 
 const StyledImg = styled.img`

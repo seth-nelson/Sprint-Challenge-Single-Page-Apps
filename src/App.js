@@ -4,10 +4,15 @@ import { Route } from 'react-router-dom';
 import WelcomePage from './components/WelcomePage';
 import CharacterList from './components/CharacterList';
 import styled from 'styled-components';
+import img from './img/img1_hal.jpg';
 
 const StyledMain = styled.div`
-  background-color: darkGray;
+  background-image: url(${img});
   text-align: center;
+  
+  img {
+    opacity: 85%;
+  }
 `;
 
 export default function App() {
