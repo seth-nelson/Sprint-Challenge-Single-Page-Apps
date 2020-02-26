@@ -7,7 +7,7 @@ export default function SearchForm(props) {
       <form>
         <input
           type='text'
-					onChange={props.handleInputChange}
+					onChange={props.handleInputChanges}
 					value={props.searchQuery}
           placeholder={props.placeHolder}
         />
